@@ -66,7 +66,7 @@ def standardize_vertical(vertical):
 @st.cache_data
 def load_data():
     try:
-        df = pd.read_csv("dataset for A1P1 startup_funding-dataset.csv")
+        df = pd.read_csv("./mount/src/msai/Assignement_01_Advance_ML/dataset for A1P1 startup_funding-dataset.csv")
         return df
     except:
         st.error("Error loading dataset. Please make sure 'dataset for A1P1 startup_funding-dataset.csv' is available.")

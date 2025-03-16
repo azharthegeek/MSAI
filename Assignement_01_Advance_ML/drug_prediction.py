@@ -36,7 +36,7 @@ page = st.sidebar.selectbox(
 @st.cache_data
 def load_data():
     try:
-        df = pd.read_csv('dataset for A1P2 drug200.csv')
+        df = pd.read_csv('./mount/src/msai/Assignement_01_Advance_ML/dataset for A1P2 drug200.csv')
         # Convert object columns using the built-in str type for Arrow compatibility
         for col in df.select_dtypes(include=['object']).columns:
             df[col] = df[col].astype(str)
